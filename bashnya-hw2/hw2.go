@@ -37,7 +37,6 @@ func main() {
 		}
 
 		if num%13 == 0 {
-			fmt.Fprintf(os.Stdout, "%d", &num)
 			var res = strconv.Itoa(num)
 			rand.New(rand.NewSource(time.Now().Unix()))
 			colors[rand.Intn(len(colors))](res)
